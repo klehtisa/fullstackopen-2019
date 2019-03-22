@@ -1,0 +1,32 @@
+note over selain:
+Selain on sivulla
+https://fullstack-exampleapp.herokuapp.com/spa
+end note
+
+note over selain:
+Tekstikenttään kirjoitetaan:
+"Pitääkö olla huolissaan?"
+ja painnetaan "Talleta" -nappia
+end note
+
+note over selain:
+Selain suorittaa js koodia lisäten uuden 
+muistiinpanon listaan
+end note
+
+note over selain:
+Selaimen js -koodi muokkaa uuden mistiinpanon 
+JSON -muotooon
+end note
+
+note over selain:
+Selaimen js -koodi lähettää muistiinpanon palvelimelle
+end note
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+palvelin-->selain: {"message":"note created"}
+
+note over selain:
+Selaimen js -koodi tulostaa konsolille: 
+{"message":"note created"}
+end note
